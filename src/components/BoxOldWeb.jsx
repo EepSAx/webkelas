@@ -2,7 +2,7 @@
 const BoxOldWeb = () => {
 	return (
 		<div id="BoxOldWeb">
-			<a href="https://www.instagram.com/sisfor.gac03r/?hl=id">
+			<a href="https://sites.google.com/view/sisforgac003r/">
 				<div className="flex justify-between">
 					<img src="/link.png" alt="" className="w-auto h-6" />
 					<img src="/next.png" alt="" className="h-3 w-3" />
