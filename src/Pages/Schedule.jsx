@@ -31,19 +31,19 @@ const Schedule = () => {
   // Menentukan kelompok piket berdasarkan minggu saat ini
   if (currentWeek === 1 || currentWeek === 3) {
     piketGroup = [
-      ["Senin", "Pengantar Sistem Informasi", "Jam 12.30 - 14.30", "Ruang 401"],
-      ["Selasa", " Sistem Enterprise", "Jam 07.30 - 09.30", "Ruang 301"],
-      ["Rabu", "Kalkulus", "Jam 12.30 - 14.30", "Ruang 403"],
-      ["Kamis", "Matematika Diskrit", "Jam 07.30 - 09.30", "Ruang 302"],
-      ["Jumat", "Bahasa Inggris", "Waktu tentative", "Kampus B"],
+      ["PK Ruang 404", "LITEK Ruang 202", "PPL Ruang 101"],
+      ["PSI Ruang 301"],
+      ["SE Ruang 401", "KALKULUS Ruang 403"],
+      ["MATDIS Ruang 301"],
+      ["B ING Ruang 101"],
     ];
   } else if (currentWeek === 2 || currentWeek === 4) {
     piketGroup = [
-      ["Senin", "Pengantar Sistem Informasi", "Jam 12.30 - 14.30", "Ruang 401"],
-      ["Selasa", " Sistem Enterprise", "Jam 07.30 - 09.30", "Ruang 301"],
-      ["Rabu", "Kalkulus", "Jam 12.30 - 14.30", "Ruang 403"],
-      ["Kamis", "Matematika Diskrit", "Jam 07.30 - 09.30", "Ruang 302"],
-      ["Jumat", "Bahasa Inggris", "Waktu tentative", "Kampus B"],
+      ["PK Ruang 404", "LITEK Ruang 202", "PPL Ruang 101"],
+      ["PSI Ruang 301"],
+      ["SE Ruang 401", "KALKULUS Ruang 403"],
+      ["MATDIS Ruang 301"],
+      ["B ING Ruang 101"],
     ];
   }
 
@@ -93,7 +93,7 @@ const Schedule = () => {
           data-aos="fade-up"
           data-aos-duration="500"
         >
-          Jadwal UTS
+          Ruang Kelas
         </div>
         {currentPiketNames && currentPiketNames.length > 0 ? (
           currentPiketNames.map((piketName, index) => (
