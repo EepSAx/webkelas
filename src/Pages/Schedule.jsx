@@ -31,19 +31,19 @@ const Schedule = () => {
   // Menentukan kelompok piket berdasarkan minggu saat ini
   if (currentWeek === 1 || currentWeek === 3) {
     piketGroup = [
-      ["PK Ruang 404", "LITEK Ruang 202", "PPL Ruang 101"],
-      ["PSI Ruang 301"],
-      ["SE Ruang 401", "KALKULUS Ruang 403"],
-      ["MATDIS Ruang 301"],
-      ["B ING Ruang 101"],
+      ["Pendidikan Karakter Ruang 403", "Literasi Teknologi Ruang 202", "Pengantar Pemrograman dan Logika Ruang 101"],
+      ["Pengantar Sistem Informasi Ruang 301"],
+      ["Sistem Enterprise Ruang 402", "Kalkulus Ruang 403"],
+      ["Matematika Diskrit Ruang 301"],
+      ["Bahasa Inggris Ruang 101"],
     ];
   } else if (currentWeek === 2 || currentWeek === 4) {
     piketGroup = [
-      ["PK Ruang 404", "LITEK Ruang 202", "PPL Ruang 101"],
-      ["PSI Ruang 301"],
-      ["SE Ruang 401", "KALKULUS Ruang 403"],
-      ["MATDIS Ruang 301"],
-      ["B ING Ruang 101"],
+      ["Pendidikan Karakter Ruang 403", "Literasi Teknologi Ruang 202", "Pengantar Pemrograman dan Logika Ruang 101"],
+      ["Pengantar Sistem Informasi Ruang 301"],
+      ["Sistem Enterprise Ruang 402", "Kalkulus Ruang 403"],
+      ["Matematika Diskrit Ruang 301"],
+      ["Bahasa Inggris Ruang 101"],
     ];
   }
 

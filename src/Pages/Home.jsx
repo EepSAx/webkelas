@@ -8,7 +8,7 @@ const Home = () => {
 		<div className="text-white px-[10%]" id="Home">
 			<Navbar />
 			<div className="lg:hidden">
-				<div className="font-bold text-5xl text-center py-20 ">SI 23 003</div>
+				<div className="font-bold text-5xl text-center py-20 ">Information System 23 03 TUKJ</div>
 				<div
 					className="border-2 flex justify-between px-10 text-4xl font-bold py-2 relative"
 					id="TotalSiswa">
@@ -47,7 +47,7 @@ const Home = () => {
 						WELCOME TO
 					</h1>
 					<h6 className="text-sm" style={{ letterSpacing: "5px" }}>
-						SI 23 003
+						Information System 23 03 TUKJ
 					</h6>
 				</div>
 			</div>
