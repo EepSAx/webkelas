@@ -26,24 +26,24 @@ const Schedule = () => {
     AOS.refresh();
   }, []);
 
-  let piketGroup = [];
+  let RuangKelas = [];
 
-  // Menentukan kelompok piket berdasarkan minggu saat ini
+  // Menentukan ruang kelas berdasarkan minggu saat ini
   if (currentWeek === 1 || currentWeek === 3) {
-    piketGroup = [
-      ["Pendidikan Karakter Ruang 403", "Literasi Teknologi Ruang 202", "Pengantar Pemrograman dan Logika Ruang 101"],
-      ["Pengantar Sistem Informasi Ruang 301"],
-      ["Sistem Enterprise Ruang 402", "Kalkulus Ruang 403"],
-      ["Matematika Diskrit Ruang 301"],
-      ["Bahasa Inggris Ruang 101"],
+    RuangKelas = [
+      ["Bahasa Inggris Ruang 301"],
+      ["Algoritma dan Pemrograman Ruang 402", "Matriks dan Ruang Vektor Ruang 302"],
+      ["Probabilitas dan Statistika Ruang 302", "Sistem Basis Data Ruang 202"],
+      ["Dasar Keuangan Sistem Informasi Ruang 302"],
+      ["Kepemimpinan dan Komunikasi Interpersonal Ruang 301"],
     ];
   } else if (currentWeek === 2 || currentWeek === 4) {
-    piketGroup = [
-      ["Pendidikan Karakter Ruang 403", "Literasi Teknologi Ruang 202", "Pengantar Pemrograman dan Logika Ruang 101"],
-      ["Pengantar Sistem Informasi Ruang 301"],
-      ["Sistem Enterprise Ruang 402", "Kalkulus Ruang 403"],
-      ["Matematika Diskrit Ruang 301"],
-      ["Bahasa Inggris Ruang 101"],
+    RuangKelas = [
+      ["Bahasa Inggris Ruang 301"],
+      ["Algoritma dan Pemrograman Ruang 402", "Matriks dan Ruang Vektor Ruang 302"],
+      ["Probabilitas dan Statistika Ruang 302", "Sistem Basis Data Ruang 202"],
+      ["Dasar Keuangan Sistem Informasi Ruang 302"],
+      ["Kepemimpinan dan Komunikasi Interpersonal Ruang 301"],
     ];
   }
 
@@ -59,8 +59,8 @@ const Schedule = () => {
   // Menampilkan komponen berdasarkan hari saat ini
   const TodayComponent = dayComponents[new Date().getDay()];
 
-  // Menampilkan nama-nama piket sesuai dengan hari dan minggu saat ini
-  const currentPiketNames = piketGroup[new Date().getDay() - 1];
+  // Menampilkan nama-nama ruang kelas sesuai dengan hari dan minggu saat ini
+  const currentKelasNames = RuangKelas[new Date().getDay() - 1];
 
   return (
     <>
@@ -86,7 +86,7 @@ const Schedule = () => {
         </div>
       </div>
 
-      {/* Jadwal Piket */}
+      {/* Ruang Kelas */}
       <div className="text-white flex flex-col justify-center items-center mt-8 lg:mt-0 overflow-y-hidden">
         <div
           className="text-2xl font-medium mb-5 text-center"
@@ -95,17 +95,17 @@ const Schedule = () => {
         >
           Ruang Kelas
         </div>
-        {currentPiketNames && currentPiketNames.length > 0 ? (
-          currentPiketNames.map((piketName, index) => (
+        {currentKelasNames && currentKelasNames.length > 0 ? (
+          currentKelasNames.map((kelasName, index) => (
             <div
               key={index}
               className={` border-t-2 border-white flex justify-center py-[0.50rem] w-72 px-3 ${
-                index === currentPiketNames.length - 1 ? "border-b-2" : ""
+                index === currentKelasNames.length - 1 ? "border-b-2" : ""
               }`}
               data-aos="fade-up"
               data-aos-duration={600 + index * 100}
             >
-              <div className="text-base font-medium">{piketName}</div>
+              <div className="text-base font-medium">{kelasName}</div>
             </div>
           ))
         ) : (
