@@ -31,19 +31,19 @@ const Schedule = () => {
   // Menentukan ruang kelas berdasarkan minggu saat ini
   if (currentWeek === 1 || currentWeek === 3) {
     RuangKelas = [
-      ["Bahasa Inggris Ruang 301"],
-      ["Algoritma dan Pemrograman Ruang 402", "Matriks dan Ruang Vektor Ruang 302"],
-      ["Probabilitas dan Statistika Ruang 302", "Sistem Basis Data Ruang 202"],
-      ["Dasar Keuangan Sistem Informasi Ruang 302"],
-      ["Kepemimpinan dan Komunikasi Interpersonal Ruang 301"],
+      ["RKC.KJ.04.003"],
+      ["RKC.KJ.04.004"],
+      ["RKC.KJ.04.003", "RKC.KJ.04.001"],
+      ["RKC.KJ.04.004", "RKC.KJ.03.003"],
+      ["RKC.KJ.03.001"],
     ];
   } else if (currentWeek === 2 || currentWeek === 4) {
     RuangKelas = [
-      ["Bahasa Inggris Ruang 301"],
-      ["Algoritma dan Pemrograman Ruang 402", "Matriks dan Ruang Vektor Ruang 302"],
-      ["Probabilitas dan Statistika Ruang 302", "Sistem Basis Data Ruang 202"],
-      ["Dasar Keuangan Sistem Informasi Ruang 302"],
-      ["Kepemimpinan dan Komunikasi Interpersonal Ruang 301"],
+      ["RKC.KJ.04.003"],
+      ["RKC.KJ.04.004"],
+      ["RKC.KJ.04.003", "RKC.KJ.04.001"],
+      ["RKC.KJ.04.004", "RKC.KJ.03.003"],
+      ["RKC.KJ.03.001"],
     ];
   }
 

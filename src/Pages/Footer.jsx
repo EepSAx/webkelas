@@ -24,11 +24,6 @@ const Footer = () => {
 										Eep
 									</a>
 								</li>
-								<li>
-									<a href="https://www.instagram.com/ramadwiprstya/?hl=id" class="hover:underline">
-										Rama
-									</a>
-								</li>
 							</ul>
 						</div>
 						<div className="">
